@@ -3,7 +3,7 @@
 // Never put a client secret in this repo.
 window.MONITOR_CONFIG = {
   // Entra ID app registration (Single-page application platform)
-  clientId: "PASTE-CLIENT-ID-HERE",
+  clientId: "7caff373-16cd-4f10-9ffe-17a3e8f0f82c",
   tenantId: "fab3949d-3cb0-4097-802f-053ad7075219",
 
   // HTTP trigger URL of the "API" flow (When an HTTP request is received,
