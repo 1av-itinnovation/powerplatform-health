@@ -1,0 +1,887 @@
+{
+ "demo": true,
+ "generatedAt": "2026-11-13T12:24:00Z",
+ "windowHours": 24,
+ "services": [
+  {
+   "name": "Power Platform",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "name": "Power Apps",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "name": "Power Automate",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "name": "SharePoint",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "name": "Outlook",
+   "status": "degraded",
+   "note": "Users may be unable to connect"
+  },
+  {
+   "name": "Teams",
+   "status": "advisory",
+   "note": "Service degradation advisory"
+  }
+ ],
+ "projects": [
+  {
+   "key": "bts",
+   "name": "Baggage Tracking",
+   "prefix": "1AVBTS",
+   "status": "failing",
+   "uptimePct": 91.4,
+   "runs": 163,
+   "failed": 14,
+   "hourly": [
+    [
+     6,
+     0
+    ],
+    [
+     9,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     10,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     10,
+     0
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     9,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     9,
+     0
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ]
+   ],
+   "flows": [
+    {
+     "name": "1AVBTS_PIRAHL",
+     "runs": 29,
+     "failed": 10,
+     "lastRun": "2026-11-13T11:10:00Z",
+     "lastStatus": "Failed",
+     "lastError": "Duplicate PIR ID on Create item (double trigger)"
+    },
+    {
+     "name": "1AVBTS_PendingEntryAlerts",
+     "runs": 9,
+     "failed": 3,
+     "lastRun": "2026-11-13T03:21:00Z",
+     "lastStatus": "Failed",
+     "lastError": "Send email (V2) timed out"
+    },
+    {
+     "name": "1AVBTS_DriverPingLocation",
+     "runs": 61,
+     "failed": 1,
+     "lastRun": "2026-11-13T09:05:00Z",
+     "lastStatus": "Failed",
+     "lastError": "Save Conflict on Update item"
+    },
+    {
+     "name": "1AVBTS_UpdateShipment",
+     "runs": 12,
+     "failed": 0,
+     "lastRun": "2026-11-13T09:49:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    },
+    {
+     "name": "1AVBTS_Shipments",
+     "runs": 18,
+     "failed": 0,
+     "lastRun": "2026-11-13T12:27:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    },
+    {
+     "name": "1AVBTS_ActiveBags",
+     "runs": 15,
+     "failed": 0,
+     "lastRun": "2026-11-13T11:26:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    },
+    {
+     "name": "1AVBTS_DriverAuthentication",
+     "runs": 6,
+     "failed": 0,
+     "lastRun": "2026-11-13T07:56:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    },
+    {
+     "name": "1AVBTS_AppVersionCheck",
+     "runs": 13,
+     "failed": 0,
+     "lastRun": "2026-11-13T11:24:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    }
+   ],
+   "apps": [
+    {
+     "name": "[LU] Baggage Tracking System",
+     "lastUsed": "2026-11-13T11:50:00Z",
+     "activeHours": 17
+    },
+    {
+     "name": "[DRIVER] Baggage Tracking System",
+     "lastUsed": "2026-11-13T11:20:00Z",
+     "activeHours": 15
+    }
+   ],
+   "checks": [
+    {
+     "label": "PIR double trigger",
+     "value": "10 of 29 runs failed",
+     "status": "failing"
+    }
+   ],
+   "summary": "PIR flow fires twice per item; alert emails timing out"
+  },
+  {
+   "key": "acc",
+   "name": "Aircraft Cabin Cleaning",
+   "prefix": "1AVACC",
+   "status": "warning",
+   "uptimePct": 99.8,
+   "runs": 2001,
+   "failed": 5,
+   "hourly": [
+    [
+     101,
+     0
+    ],
+    [
+     76,
+     0
+    ],
+    [
+     64,
+     0
+    ],
+    [
+     91,
+     0
+    ],
+    [
+     78,
+     0
+    ],
+    [
+     63,
+     0
+    ],
+    [
+     112,
+     0
+    ],
+    [
+     103,
+     0
+    ],
+    [
+     57,
+     0
+    ],
+    [
+     90,
+     0
+    ],
+    [
+     85,
+     0
+    ],
+    [
+     120,
+     0
+    ],
+    [
+     106,
+     0
+    ],
+    [
+     62,
+     0
+    ],
+    [
+     131,
+     1
+    ],
+    [
+     45,
+     0
+    ],
+    [
+     75,
+     0
+    ],
+    [
+     109,
+     0
+    ],
+    [
+     48,
+     1
+    ],
+    [
+     82,
+     0
+    ],
+    [
+     37,
+     3
+    ],
+    [
+     100,
+     0
+    ],
+    [
+     109,
+     0
+    ],
+    [
+     90,
+     0
+    ]
+   ],
+   "flows": [
+    {
+     "name": "1AVACC_EODSummary",
+     "runs": 1,
+     "failed": 1,
+     "lastRun": "2026-11-13T02:07:00Z",
+     "lastStatus": "Failed",
+     "lastError": "Response is not in a JSON format"
+    },
+    {
+     "name": "1AVACC_ScheduledSummary",
+     "runs": 4,
+     "failed": 1,
+     "lastRun": "2026-11-13T05:53:00Z",
+     "lastStatus": "Failed",
+     "lastError": "Cancelled after 45 min"
+    },
+    {
+     "name": "1AVACC_UpdateRequest",
+     "runs": 142,
+     "failed": 3,
+     "lastRun": "2026-11-13T10:27:00Z",
+     "lastStatus": "Failed",
+     "lastError": "Save Conflict on Update item"
+    },
+    {
+     "name": "1AVACC_MaintenanceStatus",
+     "runs": 1470,
+     "failed": 0,
+     "lastRun": "2026-11-13T11:58:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    },
+    {
+     "name": "1AVACC_UptimeHealth",
+     "runs": 288,
+     "failed": 0,
+     "lastRun": "2026-11-13T12:17:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    },
+    {
+     "name": "1AVACC_PlanningModulev2",
+     "runs": 96,
+     "failed": 0,
+     "lastRun": "2026-11-13T11:28:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    }
+   ],
+   "apps": [
+    {
+     "name": "Planner",
+     "lastUsed": "2026-11-13T12:15:00Z",
+     "activeHours": 22
+    },
+    {
+     "name": "Driver",
+     "lastUsed": "2026-11-13T12:05:00Z",
+     "activeHours": 21
+    }
+   ],
+   "checks": [],
+   "summary": "Daily summaries hit by Microsoft 365 email issue"
+  },
+  {
+   "key": "ocs",
+   "name": "Online Clearance",
+   "prefix": "1AVOCS",
+   "status": "warning",
+   "uptimePct": 100.0,
+   "runs": 128,
+   "failed": 0,
+   "hourly": [
+    [
+     7,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     8,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     8,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     7,
+     0
+    ]
+   ],
+   "flows": [
+    {
+     "name": "1AVOCS_ApprovalUpdate",
+     "runs": 14,
+     "failed": 0,
+     "lastRun": "2026-11-13T04:25:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    },
+    {
+     "name": "1AVOCS_ApprovalRetrieve",
+     "runs": 40,
+     "failed": 0,
+     "lastRun": "2026-11-13T11:03:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    },
+    {
+     "name": "1AVOCS_RequestRetrieve",
+     "runs": 36,
+     "failed": 0,
+     "lastRun": "2026-11-13T11:04:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    },
+    {
+     "name": "1AVOCS_AVOCSLOGIN",
+     "runs": 22,
+     "failed": 0,
+     "lastRun": "2026-11-13T10:26:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    },
+    {
+     "name": "1AVOCS_ApprovalNotification",
+     "runs": 16,
+     "failed": 0,
+     "lastRun": "2026-11-13T09:15:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    }
+   ],
+   "apps": [
+    {
+     "name": "1AV Online Clearance",
+     "lastUsed": "2026-11-13T10:30:00Z",
+     "activeHours": 11
+    }
+   ],
+   "checks": [
+    {
+     "label": "Long-running run",
+     "value": "1 run waiting on Send email 3h+",
+     "status": "warning"
+    },
+    {
+     "label": "Pipeline",
+     "value": "18 requests \u00b7 182 approvals",
+     "status": "healthy"
+    }
+   ],
+   "summary": "All runs succeeded; one approval run stuck on email"
+  },
+  {
+   "key": "fuel",
+   "name": "Fuel Consumption",
+   "prefix": "1AVFuel",
+   "status": "healthy",
+   "uptimePct": 100.0,
+   "runs": 6,
+   "failed": 0,
+   "hourly": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "flows": [
+    {
+     "name": "1AVFuel_LoginSessionCheckv2",
+     "runs": 6,
+     "failed": 0,
+     "lastRun": "2026-11-13T07:25:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    }
+   ],
+   "apps": [
+    {
+     "name": "1AV Ops Fuel Consumption",
+     "lastUsed": "2026-11-13T12:25:00Z",
+     "activeHours": 23
+    }
+   ],
+   "checks": [
+    {
+     "label": "Refuels (24h)",
+     "value": "92 equipment \u00b7 4 bowser",
+     "status": "healthy"
+    },
+    {
+     "label": "Missing app version",
+     "value": "98 of 202 entries",
+     "status": "warning"
+    }
+   ],
+   "summary": "App active 23 of 24 hours"
+  },
+  {
+   "key": "loc",
+   "name": "Device Fleet Locator",
+   "prefix": "1AVLocator",
+   "status": "warning",
+   "uptimePct": 100.0,
+   "runs": 310,
+   "failed": 0,
+   "hourly": [
+    [
+     10,
+     0
+    ],
+    [
+     13,
+     0
+    ],
+    [
+     19,
+     0
+    ],
+    [
+     15,
+     0
+    ],
+    [
+     13,
+     0
+    ],
+    [
+     14,
+     0
+    ],
+    [
+     15,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     19,
+     0
+    ],
+    [
+     17,
+     0
+    ],
+    [
+     18,
+     0
+    ],
+    [
+     17,
+     0
+    ],
+    [
+     11,
+     0
+    ],
+    [
+     11,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     14,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     8,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     10,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     7,
+     0
+    ]
+   ],
+   "flows": [
+    {
+     "name": "1AVLocator_LocationUpdate",
+     "runs": 310,
+     "failed": 0,
+     "lastRun": "2026-11-13T11:55:00Z",
+     "lastStatus": "Succeeded",
+     "lastError": ""
+    }
+   ],
+   "apps": [],
+   "checks": [
+    {
+     "label": "iPad \u20266XWPY (DVO)",
+     "value": "Last seen 22 h ago",
+     "status": "failing"
+    },
+    {
+     "label": "iPad \u20264HRWF (CEB)",
+     "value": "Last seen 13 h ago",
+     "status": "warning"
+    },
+    {
+     "label": "iPad \u2026HH6W (MNL)",
+     "value": "Last seen 9 h ago \u00b7 unassigned",
+     "status": "warning"
+    },
+    {
+     "label": "iPad \u2026J6KH (CRK)",
+     "value": "Up to date \u00b7 address blank",
+     "status": "healthy"
+    }
+   ],
+   "summary": "1 of 4 iPads reporting on time"
+  }
+ ],
+ "incidents": [
+  {
+   "time": "2026-11-13T11:30:00Z",
+   "project": "Baggage Tracking",
+   "source": "1AVBTS_PIRAHL",
+   "message": "Duplicate PIR ID on Create item",
+   "severity": "failing"
+  },
+  {
+   "time": "2026-11-13T03:30:00Z",
+   "project": "Baggage Tracking",
+   "source": "1AVBTS_PendingEntryAlerts",
+   "message": "Send email (V2) timed out (3 runs)",
+   "severity": "failing"
+  },
+  {
+   "time": "2026-11-13T02:30:00Z",
+   "project": "Aircraft Cabin Cleaning",
+   "source": "1AVACC_EODSummary",
+   "message": "Response is not in a JSON format",
+   "severity": "failing"
+  },
+  {
+   "time": "2026-11-13T04:30:00Z",
+   "project": "Online Clearance",
+   "source": "1AVOCS_ApprovalUpdate",
+   "message": "Run waiting on Send email for 3h+",
+   "severity": "warning"
+  },
+  {
+   "time": "2026-11-12T14:30:00Z",
+   "project": "Device Fleet Locator",
+   "source": "iPad \u20266XWPY",
+   "message": "No location update for 22 hours",
+   "severity": "failing"
+  }
+ ]
+}

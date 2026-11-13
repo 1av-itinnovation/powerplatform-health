@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>1AV Project Health Monitor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="logo">1AV</div>
+    <div>
+      <h1>Project Health Monitor</h1>
+      <p class="sub">Power Apps &amp; Power Automate · last 24 hours</p>
+    </div>
+  </div>
+  <div class="actions">
+    <span id="updated" class="muted"></span>
+    <span id="countdown" class="muted"></span>
+    <button id="refreshBtn" class="btn ghost" disabled>Refresh now</button>
+    <button id="authBtn" class="btn">Sign in</button>
+  </div>
+</header>
+
+<div id="banner" class="banner hidden"></div>
+
+<main id="app">
+  <section id="signin" class="signin hidden">
+    <h2>Sign in to view the dashboard</h2>
+    <p>Use your 1AV / Cebu Pacific Microsoft account. Data is loaded only after sign-in.</p>
+    <button class="btn big" onclick="Monitor.signIn()">Sign in with Microsoft</button>
+  </section>
+
+  <div id="content" class="hidden">
+    <section>
+      <h2 class="sec">Microsoft services</h2>
+      <div id="services" class="services"></div>
+    </section>
+
+    <section id="kpis" class="kpis"></section>
+
+    <section>
+      <h2 class="sec">Projects</h2>
+      <div id="projects" class="projects"></div>
+    </section>
+
+    <section id="detail" class="detail hidden"></section>
+
+    <section>
+      <h2 class="sec">Open issues</h2>
+      <div id="incidents" class="card list"></div>
+    </section>
+  </div>
+</main>
+
+<footer class="foot">1AV IT Innovation · Project Health Monitor</footer>
+
+<script src="assets/vendor/msal-browser.min.js"></script>
+<script src="config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
