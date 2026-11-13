@@ -9,7 +9,7 @@ window.MONITOR_CONFIG = {
   // HTTP trigger URL of the "API" flow (When an HTTP request is received,
   // Who can trigger the flow = Any user in my tenant).
   // Leave empty to run in demo mode with data/sample.json.
-  apiUrl: "",
+  apiUrl: "https://defaultfab3949d3cb04097802f053ad70752.19.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/12/workflows/abc61a479b894d07a17d0215d7d1ef50/triggers/manual/paths/invoke?api-version=1",
 
   // Token audience required by Power Automate HTTP triggers
   scopes: ["https://service.flow.microsoft.com//.default"],
